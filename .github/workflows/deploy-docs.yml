@@ -47,3 +47,5 @@ jobs:
           # This is the branch where the docs are deployed to
           branch: gh-pages
           folder: docs/.vuepress/dist
+          # 确保部署时有正确的权限
+          token: ${{ secrets.GITHUB_TOKEN }}
