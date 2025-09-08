@@ -33,6 +33,10 @@ export default defineUserConfig({
         text: '⌛️ Timeline',
         link: '/timeline/',
       },
+      {
+        text: '🔗 Links',
+        link: '/links.html',
+      },
     ],
   }),
 
