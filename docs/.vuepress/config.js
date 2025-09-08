@@ -18,19 +18,19 @@ export default defineUserConfig({
     navbar: [
       '/',
       {
-        text: '学习笔记',
+        text: '📖 Article',
         link: '/article/',
       },
       {
-        text: '森罗万象',
+        text: '📁 Category',
         link: '/category/',
       },
       {
-        text: '一键直达',
+        text: '📚 Tag',
         link: '/tag/',
       },
       {
-        text: '时间线',
+        text: '⌛️ Timeline',
         link: '/timeline/',
       },
     ],
