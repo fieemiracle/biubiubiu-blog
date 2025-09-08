@@ -3,33 +3,34 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 import { webpackBundler } from '@vuepress/bundler-webpack'
 
+
 export default defineUserConfig({
   lang: 'en-US',
 
-  title: 'VuePress',
-  description: 'My first VuePress Site',
+  title: '国服码农',
+  description: 'CV程序媛的“打怪升级”之路',
 
   base: '/biubiubiu-blog/',
 
   theme: defaultTheme({
-    logo: 'https://vuejs.press/images/hero.png',
+    logo: '/images/avatar.jpg',
 
     navbar: [
       '/',
       {
-        text: 'Article',
+        text: '学习笔记',
         link: '/article/',
       },
       {
-        text: 'Category',
+        text: '森罗万象',
         link: '/category/',
       },
       {
-        text: 'Tag',
+        text: '一键直达',
         link: '/tag/',
       },
       {
-        text: 'Timeline',
+        text: '时间线',
         link: '/timeline/',
       },
     ],
