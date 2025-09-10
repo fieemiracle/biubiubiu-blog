@@ -264,7 +264,7 @@ import { add } from './math.js'; // 静态分析器可以确定依赖关系
 **1. 动态 require**
 
 ```javascript
-// ❌ CommonJS - 无法静态分析
+//  CommonJS - 无法静态分析
 const moduleName = getUserInput(); // 运行时才能确定
 const module = require(moduleName); // 依赖关系在运行时确定
 
@@ -285,7 +285,7 @@ if (condition) {
 **2. 运行时确定依赖**
 
 ```javascript
-// ❌ CommonJS - 依赖在运行时确定
+//  CommonJS - 依赖在运行时确定
 function loadModule(type) {
     switch(type) {
         case 'math':
@@ -304,7 +304,7 @@ const module = loadModule('math');
 **3. 条件依赖**
 
 ```javascript
-// ❌ CommonJS - 条件依赖
+//  CommonJS - 条件依赖
 let math;
 if (process.env.NODE_ENV === 'development') {
     math = require('./math-dev');
@@ -332,7 +332,7 @@ import utils from './utils.js';
 **2. 明确的依赖路径**
 
 ```javascript
-// ✅ ES Module - 路径在编译时确定
+//  ES Module - 路径在编译时确定
 import { API_URL } from './config.js';
 import { validateEmail } from '../utils/validation.js';
 
@@ -342,7 +342,7 @@ import { validateEmail } from '../utils/validation.js';
 **3. 动态导入的明确性**
 
 ```javascript
-// ✅ ES Module - 动态导入也是可分析的
+//  ES Module - 动态导入也是可分析的
 async function loadModule(name) {
     const module = await import(`./modules/${name}.js`);
     return module;
@@ -615,7 +615,7 @@ module.exports = {
     multiply: function(a, b) { return a * b; }
 };
 
-// ✅ 正确示例2：统一使用 exports
+//  正确示例2：统一使用 exports
 exports.add = function(a, b) { return a + b; };
 exports.multiply = function(a, b) { return a * b; };
 ```
@@ -697,11 +697,11 @@ exports.multiply = function(a, b) { return a * b; };
 **2. 避免混合使用**
 
 ```javascript
-// ❌ 避免这样做
+//  避免这样做
 exports.add = add;
 module.exports.multiply = multiply;
 
-// ✅ 选择一种方式
+//  选择一种方式
 module.exports = { add, multiply };
 // 或者
 exports.add = add;
@@ -863,14 +863,14 @@ if (condition) {
 
 ## 四、模块化规范对比
 
-| 特性 | IIFE | AMD | CommonJS | ES Module |
-|------|------|-----|----------|-----------|
-| 语法复杂度 | 中等 | 高 | 低 | 低 |
-| 浏览器支持 | 好 | 需要加载器 | 需要构建工具 | 现代浏览器 |
-| 服务器支持 | 好 | 需要加载器 | 原生支持 | 原生支持 |
-| 静态分析 | 否 | 否 | 否 | 是 |
-| 循环依赖 | 不支持 | 支持 | 有限支持 | 支持 |
-| Tree Shaking | 否 | 否 | 否 | 是 |
+| 特性         | IIFE   | AMD        | CommonJS     | ES Module  |
+| ------------ | ------ | ---------- | ------------ | ---------- |
+| 语法复杂度   | 中等   | 高         | 低           | 低         |
+| 浏览器支持   | 好     | 需要加载器 | 需要构建工具 | 现代浏览器 |
+| 服务器支持   | 好     | 需要加载器 | 原生支持     | 原生支持   |
+| 静态分析     | 否     | 否         | 否           | 是         |
+| 循环依赖     | 不支持 | 支持       | 有限支持     | 支持       |
+| Tree Shaking | 否     | 否         | 否           | 是         |
 
 ## 五、CommonJS 与 ES Module 互操作性问题
 
@@ -888,10 +888,10 @@ module.exports = {
 };
 
 // es-module.js (ES Module)
-// ❌ 这样导入会有问题
+//  这样导入会有问题
 import { add, multiply } from './commonjs-module.js'; // 错误！
 
-// ✅ 正确的导入方式
+//  正确的导入方式
 import math from './commonjs-module.js';
 console.log(math.add(1, 2)); // 3
 
@@ -911,10 +911,10 @@ export default function calculate(x, y) {
 }
 
 // commonjs-module.js (CommonJS)
-// ❌ 不能直接使用 require
+// 不能直接使用 require
 const { add, multiply } = require('./es-module.js'); // 错误！
 
-// ✅ 需要使用动态 import
+// 需要使用动态 import
 async function loadESModule() {
     const esModule = await import('./es-module.js');
     console.log(esModule.add(1, 2)); // 3
@@ -1204,10 +1204,10 @@ import { formatDate } from './date.js';
 import { validateEmail } from './validation.js';
 
 // 避免深层嵌套
-// ❌ 不好的例子
+// 不好的例子
 import { helper } from '../../../utils/helpers.js';
 
-// ✅ 好的例子
+// 好的例子
 import { helper } from '@/utils/helpers.js';
 ```
 
@@ -1231,7 +1231,7 @@ export default class ApiClient {
 }
 ```
 
-## 八、总结
+## 八、写在结尾
 
 JavaScript模块化的发展历程反映了前端工程化的演进：
 
