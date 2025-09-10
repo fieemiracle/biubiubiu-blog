@@ -191,5 +191,31 @@ export default defineUserConfig({
      * @see https://theme-plume.vuejs.press/guide/features/encryption/
      */
     // encrypt: {},
+    profile: {
+      name: '青铜码农',
+      description: 'CV程序员的打怪升级之路',
+      avatar: 'https://theme-plume.vuejs.press/plume.png',
+      circle: true,
+      location: '中国',
+      organization: '王者荣耀',
+    },
+    social: [
+      { icon: 'github', link: 'https://github.com/fieemiracle/biubiubiu-blog' },
+    ],
+    watermark: {
+      enabled: page => true,
+      fullPage: false,
+      /** @see https://zhensherlock.github.io/watermark-js-plus/zh/config/ **/ 
+      watermarkOptions: {
+        content: '遇事不决，可问春风',
+      }
+    },
+    copyright: 'HLX-CYH-9.9',
+    /*comment: {
+      // 服务提供商
+      provider: 'Waline',
+      // 是否启用评论
+      comment: true,
+    }*/
   }),
 })
