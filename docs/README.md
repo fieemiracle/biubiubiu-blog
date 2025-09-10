@@ -7,9 +7,9 @@ config:
     full: true
     background: tint-plate
     hero:
-      name: 渐入佳境 | 前端成长笔记
+      name: 青铜码农
       tagline: CV程序员的打怪升级之路
-      text: 青铜码农
+      text: 渐入佳境 | 前端成长笔记
       actions:
         -
           theme: brand
