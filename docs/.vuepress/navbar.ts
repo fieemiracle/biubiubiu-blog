@@ -17,6 +17,8 @@ export const zhNavbar = defineNavbarConfig([
       text: 'Rust', link: '/notes/rust/README.md'
     }, {
       text: '工程化', link: '/notes/engineering/README.md'
+    }, {
+      text: 'React Native', link: '/notes/react-native/README.md'
     }]
   },
 ])
