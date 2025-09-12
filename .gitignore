@@ -23,6 +23,9 @@ docs/.vuepress/.temp/
 docs/.vuepress/.cache/
 docs/.vuepress/dist/
 
+# 代码文件
+docs/notes/rust/coding/
+
 # 日志文件
 *.log
 npm-debug.log*
