@@ -6,6 +6,7 @@ permalink: /rust/
 
 - [快速上手](./quickstart.md)
 - [猜数字游戏](./article1.md)
+- [常见编程概念](./article2.md)
 
 
 
