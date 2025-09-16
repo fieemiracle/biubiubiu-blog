@@ -1,7 +1,7 @@
 ---
 title: 快速上手
 createTime: 2025/09/10 19:16:36
-permalink: /article/3t3w72a1/
+permalink: /rust/3t3w72a1/
 ---
 
 ## 1、安装rustup
