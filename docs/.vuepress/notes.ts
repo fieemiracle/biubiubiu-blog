@@ -30,7 +30,7 @@ const zhRustNote = defineNoteConfig({
   // 所以请确保  markdown 文件的 permalink 都以 `link` 开头
   link: '/rust',
   // 手动配置侧边栏结构
-  sidebar: ['', 'quickstart', 'article1', 'article2'],
+  sidebar: ['', 'quickstart', 'article1', 'article2', 'article3'],
   // 根据文件结构自动生成侧边栏
   // sidebar: 'auto',
 })
