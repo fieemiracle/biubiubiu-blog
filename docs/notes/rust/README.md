@@ -9,6 +9,7 @@ permalink: /rust/
 - [常见编程概念](./article2.md)
 - [认识所有权](./article3.md)
 - [使用结构体组织相关关联的数据](./article4.md)
+- [枚举和模式匹配](./article5.md)
 
 
 
