@@ -31,7 +31,7 @@ const zhRustNote = defineNoteConfig({
   link: '/rust',
   // 手动配置侧边栏结构
   sidebar: [
-    '', 'quickstart', 'article1', 'article2', 'article3', 'article4', 'article5'
+    '', 'quickstart', 'article1', 'article2', 'article3', 'article4', 'article5', 'article6'
   ],
   // 根据文件结构自动生成侧边栏
   // sidebar: 'auto',

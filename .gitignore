@@ -24,7 +24,8 @@ docs/.vuepress/.cache/
 docs/.vuepress/dist/
 
 # 代码文件
-docs/notes/rust/coding/
+docs/notes/rust/coding*
+docs/notes/rust/coding/restaurant/
 
 # 日志文件
 *.log

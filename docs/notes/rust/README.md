@@ -10,6 +10,7 @@ permalink: /rust/
 - [认识所有权](./article3.md)
 - [使用结构体组织相关关联的数据](./article4.md)
 - [枚举和模式匹配](./article5.md)
+- [包、Crate和模块管理](./article6.md)
 
 
 
