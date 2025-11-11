@@ -20,12 +20,6 @@ export const zhNavbar = defineNavbarConfig([
     }, {
       text: 'React Native', link: '/notes/react-native/README.md'
     }]
-  },
-  {
-    text: '摸会鱼',
-    items: [{
-      text: '笑一笑', link: '/jokes/README.md'
-    }]
   }
 ])
 
