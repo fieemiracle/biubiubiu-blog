@@ -5,3 +5,4 @@ permalink: /react-native/
 ---
 
 - [快速开始](./quickstart.md)
+- [FlatList&左滑删除组件](./flatlist.md)
